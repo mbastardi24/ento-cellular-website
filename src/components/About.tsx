@@ -58,7 +58,7 @@ const About = () => {
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
                 <p>
                   My name is Sophie, and I'm Michael, and for the past five years, we have been researching 
-                  novel food ingredients during our PhD in the Kaplan lab right here at Tufts.
+                  novel food ingredients during our PhD studies.
                 </p>
                 
                 <p>
@@ -127,21 +127,14 @@ const About = () => {
               <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Journey Forward</h3>
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  As scientists and co-founders, we deeply understand the technology behind our venture. 
-                  We are interested in strengthening our business planning and fundamentals through 
-                  the Tufts New Ventures Competition.
-                </p>
-                
-                <p>
-                  We really enjoyed working with the coaches at the Derby Entrepreneurship Center, 
-                  and now we have much more to learn to make this venture a reality.
+                  As scientists and co-founders, we deeply understand the technology behind our venture 
+                  and are committed to making this innovative approach to pet food ingredients a reality.
                 </p>
                 
                 <p>
                   We're finishing our PhDs this summer and plan to work on Entocellular full time 
-                  after graduation. We're in the process of applying for an SBIR from the NSF to 
-                  support this project, and we've leveraged the experience over the summer to 
-                  attract more funding.
+                  after graduation. We're actively seeking funding opportunities to support this project 
+                  and scale our technology to meet market demands.
                 </p>
               </div>
             </div>
