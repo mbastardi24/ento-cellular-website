@@ -77,33 +77,6 @@ const Benefits = () => {
               </Card>
             ))}
           </div>
-
-          {/* Statistics Section */}
-          <div className="bg-primary text-white rounded-3xl p-8 md:p-12">
-            <div className="text-center mb-8">
-              <h3 className="text-3xl font-bold mb-4">The Numbers Speak for Themselves</h3>
-              <p className="text-primary-100 text-lg">Scientific data supporting the insect ingredient revolution</p>
-            </div>
-            
-            <div className="grid md:grid-cols-4 gap-8 text-center">
-              <div>
-                <div className="text-4xl font-bold mb-2">90%</div>
-                <div className="text-primary-100">Less Land Required</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold mb-2">80%</div>
-                <div className="text-primary-100">Less Water Usage</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold mb-2">99%</div>
-                <div className="text-primary-100">Fewer Emissions</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold mb-2">2x</div>
-                <div className="text-primary-100">Protein Efficiency</div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

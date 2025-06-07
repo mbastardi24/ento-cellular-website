@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -7,11 +9,13 @@ const Footer = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             {/* Company Info */}
             <div>
-              <img 
-                src="/lovable-uploads/bbddc5a9-aeb2-412b-b106-14409b31d725.png" 
-                alt="Entocellular Logo" 
-                className="h-10 w-auto mb-4 filter brightness-0 invert"
-              />
+              <div className="mb-4">
+                <img 
+                  src="EntoCellular-removed-background.png" 
+                  alt="Entocellular Logo" 
+                  className="h-22 w-auto filter brightness-0 invert"
+                />
+              </div>
               <p className="text-gray-400 leading-relaxed">
                 Harnessing the power of insect resiliency to create sustainable, 
                 cost-effective, and ethical pet food ingredients.
@@ -23,19 +27,19 @@ const Footer = () => {
               <h4 className="font-bold text-lg mb-4">Quick Links</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#about" className="text-gray-400 hover:text-primary-400 transition-colors">
+                  <Link to="/" className="text-gray-400 hover:text-primary-400 transition-colors">
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#benefits" className="text-gray-400 hover:text-primary-400 transition-colors">
+                  <Link to="/" className="text-gray-400 hover:text-primary-400 transition-colors">
                     Benefits
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#contact" className="text-gray-400 hover:text-primary-400 transition-colors">
+                  <Link to="/contact" className="text-gray-400 hover:text-primary-400 transition-colors">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -43,10 +47,21 @@ const Footer = () => {
             {/* Contact Info */}
             <div>
               <h4 className="font-bold text-lg mb-4">Contact Information</h4>
-              <div className="space-y-2 text-gray-400">
-                <p>hello@entocellular.com</p>
-                <p>+1 (555) 123-4567</p>
-                <p>123 Innovation Drive<br />BioTech Park, CA 94301</p>
+              <div className="space-y-4 text-gray-400">
+                <a 
+                  href="mailto:hello@entocellular.com" 
+                  className="flex items-center hover:text-primary-400 transition-colors"
+                >
+                  <Mail className="w-5 h-5 mr-2" />
+                  <span>hello@entocellular.com</span>
+                </a>
+                <a 
+                  href="tel:+15551234567" 
+                  className="flex items-center hover:text-primary-400 transition-colors"
+                >
+                  <Phone className="w-5 h-5 mr-2" />
+                  <span>+1 (555) 123-4567</span>
+                </a>
               </div>
             </div>
           </div>

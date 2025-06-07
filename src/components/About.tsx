@@ -98,10 +98,6 @@ const About = () => {
               </div>
               
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
-                <p>
-                  My name is Sophie, and I'm Michael, and for the past five years, we have been researching 
-                  novel food ingredients during our PhD studies.
-                </p>
                 
                 <p>
                   Almost half of all pet food ingredients by weight come from animals. While animal products 
@@ -129,12 +125,7 @@ const About = () => {
               <h3 className="text-3xl font-bold text-gray-900 mb-6">How We're Different</h3>
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed text-left">
                 <p>
-                  Here's how we're different from other cultivated meat companies: Instead of focusing on 
-                  cells from livestock species, we are growing cells from insects. That's where our name 
-                  comes from - the "ento" is for insects and the "cellular" is for the cultivated meat technology.
-                </p>
-                
-                <p>
+                  Instead of focusing on cells from livestock species, we are growing cells from insects.
                   Insect cells are uniquely suited as a pet food ingredient because compared to cells from 
                   livestock species, they're inherently more scalable, resilient and adaptable.
                 </p>

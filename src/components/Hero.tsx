@@ -1,8 +1,15 @@
-
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Leaf, Heart, Shield } from "lucide-react";
+import { Leaf, Heart, Shield } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
+  const handleContactClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    navigate('/contact');
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 via-white to-primary-100 overflow-hidden">
       {/* Background Pattern */}
@@ -15,11 +22,11 @@ const Hero = () => {
       <div className="container mx-auto px-4 pt-20 pb-16 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Logo */}
-          <div className="mb-8 animate-fade-in">
+          <div className="mb-1 animate-fade-in">
             <img 
-              src="/lovable-uploads/bbddc5a9-aeb2-412b-b106-14409b31d725.png" 
+              src="EntoCellular-removed-background.png" 
               alt="Entocellular Logo" 
-              className="h-20 w-auto mx-auto mb-6"
+              className="h-40 w-auto mx-auto mb-1"
             />
           </div>
 
@@ -51,13 +58,14 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* CTA Buttons */}
+          {/* Contact Button */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{animationDelay: '0.8s'}}>
-            <Button size="lg" className="bg-primary hover:bg-primary-600 text-white px-8 py-3 text-lg group">
-              Learn More
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 text-lg">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 text-lg" 
+              onClick={handleContactClick}
+            >
               Contact Us
             </Button>
           </div>
