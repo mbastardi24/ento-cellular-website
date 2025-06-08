@@ -29,17 +29,18 @@ const Footer = () => {
               <h4 className="font-bold text-lg mb-4">Quick Links</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link to="/" className="text-gray-400 hover:text-primary-400 transition-colors">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/" className="text-gray-400 hover:text-primary-400 transition-colors">
+                  <Link
+                    to = "/benefits"
+                    className="text-gray-400 hover:text-primary-400 transition-colors"
+                  >
                     Benefits
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact" className="text-gray-400 hover:text-primary-400 transition-colors">
+                  <Link 
+                    to="/contact" 
+                    className="text-gray-400 hover:text-primary-400 transition-colors"
+                  >
                     Contact
                   </Link>
                 </li>

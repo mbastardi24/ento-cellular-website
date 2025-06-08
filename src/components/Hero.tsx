@@ -11,6 +11,11 @@ const Hero = () => {
     navigate('/contact');
   };
 
+  const handleBenefitsClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    navigate('/benefits');
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 via-white to-primary-100 overflow-hidden">
       {/* Background Pattern */}
@@ -61,6 +66,15 @@ const Hero = () => {
 
           {/* Contact Button */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{animationDelay: '0.8s'}}>
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 text-lg" 
+              onClick={handleBenefitsClick}
+            >
+              Benefits
+            </Button>
+
             <Button 
               size="lg" 
               variant="outline" 
