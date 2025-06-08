@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Leaf, Heart, Shield } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import {LOGOS} from "@/config/constants";
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -24,7 +25,7 @@ const Hero = () => {
           {/* Logo */}
           <div className="mb-1 animate-fade-in">
             <img 
-              src="EntoCellular-removed-background.png" 
+              src={LOGOS.logo} 
               alt="Entocellular Logo" 
               className="h-40 w-auto mx-auto mb-1"
             />

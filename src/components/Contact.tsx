@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
+import { CONTACT_INFO } from "@/config/constants";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -190,7 +191,7 @@ const Contact = () => {
             <div className="space-y-8">
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h3>
-                <p className="text-lg text-gray-600 mb-8">
+                <p className="text-lg text-gray-600 mb-6">
                   Whether you're a pet food manufacturer interested in our ingredients, 
                   an investor looking to support sustainable innovation, or simply curious 
                   about our mission, we'd love to hear from you.
@@ -199,23 +200,36 @@ const Contact = () => {
 
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                  <a 
+                    href={CONTACT_INFO.emailLink}
+                    className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4 hover:bg-primary-200 hover:scale-110 transition-all duration-200 ease-in-out"
+                  >
                     <Mail className="w-6 h-6 text-primary" />
-                  </div>
+                  </a>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Email Us</h4>
-                    <p className="text-gray-600">hello@entocellular.com</p>
-                    <p className="text-gray-600">partnerships@entocellular.com</p>
+                    <h4 className="font-bold text-gray-900">Email Us</h4>
+                    <a 
+                      href={CONTACT_INFO.emailLink}
+                      className="font-semibold hover:text-primary-600 text-gray-600 transition-all duration-200 ease-in-out">
+                      <span>{CONTACT_INFO.email}</span>
+                    </a>
                   </div>
                 </div>
 
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                  <a 
+                    href={CONTACT_INFO.phoneLink}
+                    className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4 hover:bg-primary-200 hover:scale-110 transition-all duration-200 ease-in-out"
+                  >
                     <Phone className="w-6 h-6 text-primary" />
-                  </div>
+                  </a>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Call Us</h4>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
+                    <h4 className="font-bold text-gray-900">Call Us</h4>
+                    <a
+                      href={CONTACT_INFO.phoneLink}
+                      className="font-semibold hover:text-primary-600 text-gray-600 transition-all duration-200 ease-in-out">
+                      <span>{CONTACT_INFO.phone}</span>
+                    </a>
                   </div>
                 </div>
               </div>

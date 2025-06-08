@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import {LOGOS} from "@/config/constants";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,37 +38,29 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <img 
-              src="EntoCellularIcon.ico" 
-              alt="Entocellular Logo" 
-              className="h-8 w-auto"
-            />
-          </div>
-          
-          {/* Title */}
-          <div className="hidden md:flex items-center justify-center absolute left-1/2 transform -translate-x-1/2">
+          <div className="flex items-center">
             <Link 
               to="/" 
               onClick={handleTitleClick}
-              className="text-2xl font-bold cursor-pointer hover:opacity-80 transition-opacity no-underline"
+              className="cursor-pointer hover:opacity-80 transition-opacity no-underline"
             >
-              <h1 className="m-0">
-                <span className="text-primary">Ento</span>
-                <span className="text-black">Cellular</span>
-              </h1>
+              <img
+                src={LOGOS.logo}
+                alt="EntoCellular Logo"
+                className="h-12 w-auto"
+              />
             </Link>
           </div>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <a 
-              href="/" 
-              onClick={(e) => handleSectionClick(e, "about")}
+          <nav className="hidden md:flex items-center space-x-6">
+            <Link
+              to = "/about"
               className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
             >
               About
-            </a>
+            </Link>
+
             <a 
               href="/" 
               onClick={(e) => handleSectionClick(e, "benefits")}
@@ -75,6 +68,7 @@ const Header = () => {
             >
               Benefits
             </a>
+
             <Link 
               to="/contact" 
               className="text-gray-700 hover:text-primary-600 transition-colors font-medium"

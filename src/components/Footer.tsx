@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone} from "lucide-react";
+import { CONTACT_INFO } from "@/config/constants";
+import {LOGOS} from "@/config/constants";
 
 const Footer = () => {
   return (
@@ -11,7 +13,7 @@ const Footer = () => {
             <div>
               <div className="mb-4">
                 <img 
-                  src="EntoCellular-removed-background.png" 
+                  src={LOGOS.logo}
                   alt="Entocellular Logo" 
                   className="h-22 w-auto filter brightness-0 invert"
                 />
@@ -49,18 +51,18 @@ const Footer = () => {
               <h4 className="font-bold text-lg mb-4">Contact Information</h4>
               <div className="space-y-4 text-gray-400">
                 <a 
-                  href="mailto:hello@entocellular.com" 
+                  href={CONTACT_INFO.emailLink} 
                   className="flex items-center hover:text-primary-400 transition-colors"
                 >
                   <Mail className="w-5 h-5 mr-2" />
-                  <span>hello@entocellular.com</span>
+                  <span>{CONTACT_INFO.email}</span>
                 </a>
                 <a 
-                  href="tel:+15551234567" 
+                  href={CONTACT_INFO.phoneLink} 
                   className="flex items-center hover:text-primary-400 transition-colors"
                 >
                   <Phone className="w-5 h-5 mr-2" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>{CONTACT_INFO.phone}</span>
                 </a>
               </div>
             </div>
