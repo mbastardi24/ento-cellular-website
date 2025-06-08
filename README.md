@@ -1,73 +1,78 @@
-# Welcome to your Lovable project
+# EntoCellular Website
 
-## Project info
+## Overview
+EntoCellular is a pioneering company in sustainable pet food ingredients, leveraging insect cell technology to create ethical and scalable alternatives to traditional animal-based ingredients. This website serves as our digital presence, showcasing our innovative approach to pet nutrition.
 
-**URL**: https://lovable.dev/projects/8c4239bd-d924-4e9e-bc79-63d3ebcd1fe3
+## Features
+- **Responsive Design**: Optimized for all devices and screen sizes
+- **Modern UI**: Built with React and Tailwind CSS for a sleek, professional appearance
+- **Interactive Components**: Engaging user interface with smooth animations
+- **Multi-page Structure**:
+  - Home page with company overview
+  - About section detailing our mission and team
+  - Benefits page highlighting our advantages
+  - Contact page for inquiries
 
-## How can I edit this code?
+## Tech Stack
+- **Frontend Framework**: React 18 with TypeScript
+- **Styling**: Tailwind CSS with shadcn/ui components
+- **Routing**: React Router DOM
+- **Build Tool**: Vite
+- **State Management**: React Query
+- **Icons**: Lucide React
+- **Form Handling**: React Hook Form with Zod validation
 
-There are several ways of editing your application.
+## Getting Started
 
-**Use Lovable**
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8c4239bd-d924-4e9e-bc79-63d3ebcd1fe3) and start prompting.
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/ento-cellular-website.git
+   ```
 
-Changes made via Lovable will be committed automatically to this repo.
+2. Navigate to the project directory:
+   ```bash
+   cd ento-cellular-website
+   ```
 
-**Use your preferred IDE**
+3. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+4. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+5. Open [http://localhost:5173](http://localhost:5173) in your browser
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### Building for Production
+```bash
+npm run build
+# or
+yarn build
 ```
 
-**Edit a file directly in GitHub**
+## Project Structure
+```
+src/
+├── components/     # Reusable UI components
+├── pages/         # Page components
+├── config/        # Configuration files
+├── assets/        # Static assets
+├── styles/        # Global styles
+└── lib/           # Utility functions
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/8c4239bd-d924-4e9e-bc79-63d3ebcd1fe3) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Contact
+- Website: [www.entocellular.com](https://www.entocellular.com)
+- Email: [contact@entocellular.com](mailto:contact@entocellular.com)
