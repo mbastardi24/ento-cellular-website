@@ -14,6 +14,16 @@ const Header = () => {
     navigate("/");
   };
 
+  const handleContactClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    navigate('/contact');
+  };
+
+  const handleBenefitsClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    navigate('/benefits');
+  };
+
   const handleSectionClick = (e: React.MouseEvent<HTMLAnchorElement>, section: string) => {
     e.preventDefault();
     if (location.pathname !== "/") {
@@ -82,19 +92,23 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 border-t border-gray-100 pt-4">
             <div className="flex flex-col space-y-4">
-              <Link
-                to = "/benefits"
-                className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="w-full border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 text-lg" 
+                onClick={handleBenefitsClick}
               >
                 Benefits
-              </Link>
+              </Button>
 
-              <Link 
-                to="/contact" 
-                className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="w-full border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 text-lg" 
+                onClick={handleContactClick}
               >
-                Contact
-              </Link>
+                Contact Us
+              </Button>
             </div>
           </nav>
         )}
