@@ -6,7 +6,7 @@ export const CONTACT_INFO = {
 } as const; 
 
 export const LOGOS = {
-  icon: '/src/Assets/EntoCellularIcon.ico',
-  logo: '/src/Assets/EntoCellular-removed-background.png',
-  words: '/src/Assets/EntoCellular-words.png'
+  icon: '/assets/EntoCellularIcon.ico',
+  logo: '/assets/EntoCellular-removed-background.png',
+  words: '/assets/EntoCellular-words.png'
 } as const
