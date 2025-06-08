@@ -54,13 +54,6 @@ const Header = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            {/* <Link
-              to = "/about"
-              className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
-            >
-              About
-            </Link> */}
-
             <Link
               to = "/benefits"
               className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
@@ -88,32 +81,19 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 border-t border-gray-100 pt-4">
-            <div className="flex flex-col space-y-4">
-              <a 
-                href="/" 
-                onClick={(e) => handleSectionClick(e, "about")}
-                className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
-              >
-                About
-              </a>
-              <a 
-                href="/" 
-                onClick={(e) => handleSectionClick(e, "benefits")}
-                className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
-              >
-                Benefits
-              </a>
-              <Link 
-                to="/contact" 
-                className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact
-              </Link>
-              <Button className="bg-primary hover:bg-primary-600 text-white w-full">
-                Get Started
-              </Button>
-            </div>
+            <Link
+              to = "/benefits"
+              className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+            >
+              Benefits
+            </Link>
+
+            <Link 
+              to="/contact" 
+              className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+            >
+              Contact
+            </Link>
           </nav>
         )}
       </div>

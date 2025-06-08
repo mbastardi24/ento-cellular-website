@@ -28,11 +28,11 @@ const Hero = () => {
       <div className="container mx-auto px-4 pt-20 pb-16 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Logo */}
-          <div className="mb-1 animate-fade-in">
+          <div className="mb-1 animate-fade-in relative w-full max-w-[400px] mx-auto aspect-[2/1]">
             <img 
               src={LOGOS.logo} 
               alt="Entocellular Logo" 
-              className="h-40 w-auto mx-auto mb-1"
+              className="absolute inset-0 w-full h-full object-contain"
             />
           </div>
 
