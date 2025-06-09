@@ -27,22 +27,22 @@ const Benefits = () => {
       color: "text-red-500",
       bgColor: "bg-red-100"
     },
-    {
-      icon: Zap,
-      title: "Superior Nutrition",
-      //description: "High-quality complete proteins with essential amino acids, vitamins, and minerals optimized for pet health.",
-      description: "Placeholder Information",
-      color: "text-yellow-600",
-      bgColor: "bg-yellow-100"
-    },
-    {
-      icon: Recycle,
-      title: "Circular Economy",
-      //description: "Insects can be fed organic waste, creating a closed-loop system that reduces waste and maximizes resource efficiency.",
-      description: "Placeholder Information",
-      color: "text-blue-600",
-      bgColor: "bg-blue-100"
-    },
+    // {
+    //   icon: Zap,
+    //   title: "Superior Nutrition",
+    //   //description: "High-quality complete proteins with essential amino acids, vitamins, and minerals optimized for pet health.",
+    //   description: "Placeholder Information",
+    //   color: "text-yellow-600",
+    //   bgColor: "bg-yellow-100"
+    // },
+    // {
+    //   icon: Recycle,
+    //   title: "Circular Economy",
+    //   //description: "Insects can be fed organic waste, creating a closed-loop system that reduces waste and maximizes resource efficiency.",
+    //   description: "Placeholder Information",
+    //   color: "text-blue-600",
+    //   bgColor: "bg-blue-100"
+    // },
     {
       icon: Award,
       title: "Quality Assurance",
