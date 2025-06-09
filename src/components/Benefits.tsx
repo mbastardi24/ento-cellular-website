@@ -6,42 +6,48 @@ const Benefits = () => {
     {
       icon: Leaf,
       title: "Environmental Impact",
-      description: "Insects require 90% less land, 80% less water, and produce 99% fewer greenhouse gases compared to traditional protein sources.",
+      // description: "Insects require 90% less land, 80% less water, and produce 99% fewer greenhouse gases compared to traditional protein sources.",
+      description: "Placeholder Information",
       color: "text-green-600",
       bgColor: "bg-green-100"
     },
     {
       icon: DollarSign,
       title: "Cost Efficiency",
-      description: "Lower production costs and higher yield efficiency make insect-based ingredients economically competitive and scalable.",
+      //description: "Lower production costs and higher yield efficiency make insect-based ingredients economically competitive and scalable.",
+      description: "Placeholder Information",
       color: "text-primary-600",
       bgColor: "bg-primary-100"
     },
     {
       icon: Heart,
       title: "Ethical Production",
-      description: "Humane and cruelty-free production methods that align with modern consumer values and ethical standards.",
+      //description: "Humane and cruelty-free production methods that align with modern consumer values and ethical standards.",
+      description: "Placeholder Information",
       color: "text-red-500",
       bgColor: "bg-red-100"
     },
     {
       icon: Zap,
       title: "Superior Nutrition",
-      description: "High-quality complete proteins with essential amino acids, vitamins, and minerals optimized for pet health.",
+      //description: "High-quality complete proteins with essential amino acids, vitamins, and minerals optimized for pet health.",
+      description: "Placeholder Information",
       color: "text-yellow-600",
       bgColor: "bg-yellow-100"
     },
     {
       icon: Recycle,
       title: "Circular Economy",
-      description: "Insects can be fed organic waste, creating a closed-loop system that reduces waste and maximizes resource efficiency.",
+      //description: "Insects can be fed organic waste, creating a closed-loop system that reduces waste and maximizes resource efficiency.",
+      description: "Placeholder Information",
       color: "text-blue-600",
       bgColor: "bg-blue-100"
     },
     {
       icon: Award,
       title: "Quality Assurance",
-      description: "Rigorous testing and quality control ensures consistent, safe, and high-performance ingredients every time.",
+      //description: "Rigorous testing and quality control ensures consistent, safe, and high-performance ingredients every time.",
+      description: "Placeholder Information",
       color: "text-purple-600",
       bgColor: "bg-purple-100"
     }
