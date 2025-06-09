@@ -66,14 +66,14 @@ const Hero = () => {
 
           {/* Contact Button */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{animationDelay: '0.8s'}}>
-            <Button 
+            {/* <Button 
               size="lg" 
               variant="outline" 
               className="border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 text-lg" 
               onClick={handleBenefitsClick}
             >
               Benefits
-            </Button>
+            </Button> */}
 
             <Button 
               size="lg" 

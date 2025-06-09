@@ -64,12 +64,12 @@ const Header = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            <Link
+            {/* <Link
               to = "/benefits"
               className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
             >
               Benefits
-            </Link>
+            </Link> */}
 
             <Link 
               to="/contact" 
@@ -92,14 +92,14 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 border-t border-gray-100 pt-4">
             <div className="flex flex-col space-y-4">
-              <Button 
+              {/* <Button 
                 size="lg" 
                 variant="outline" 
                 className="w-full border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 text-lg" 
                 onClick={handleBenefitsClick}
               >
                 Benefits
-              </Button>
+              </Button> */}
 
               <Button 
                 size="lg" 
