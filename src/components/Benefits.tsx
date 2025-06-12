@@ -67,7 +67,6 @@ const Benefits = () => {
               the smart choice for manufacturers, consumers, and the planet.
             </p>
           </div>
-
           {/* Benefits Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
             {benefits.map((benefit, index) => (
